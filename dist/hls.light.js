@@ -12550,7 +12550,7 @@ var xhr_loader_XhrLoader = function () {
   XhrLoader.prototype.loadInternal = function loadInternal() {
 
     //if there is no url, no need to attempt the request
-    if (!context.url) return false;
+    if (!this.context.url) return false;
 
     var xhr = void 0,
         context = this.context;

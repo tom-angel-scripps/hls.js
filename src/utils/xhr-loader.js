@@ -43,8 +43,8 @@ class XhrLoader {
   loadInternal () {
 
     //if there is no url, no need to attempt the request
-    if(!context.url) return false;
-    
+    if(!this.context.url) return false;
+
     let xhr, context = this.context;
     xhr = this.loader = new XMLHttpRequest();
 
